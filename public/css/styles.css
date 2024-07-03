@@ -1,0 +1,153 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.batiments {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.batiment-btn {
+  padding: 10px 20px;
+  font-size: 50px;
+  background-color: #007bff !important;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.batiment-btn:hover {
+  background-color: #0056b3 !important;
+}
+
+.batiment-btn:first-child {
+  margin-right: 10px; /* Ajoute une marge à droite pour espacer les boutons */
+}
+.etages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.etage-btn {
+  padding: 10px 20px;
+  font-size: 30px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.etage-btn:hover {
+  background-color: #0056b3;
+}
+.bureaux {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.bureau-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bureau-btn:hover {
+  background-color: #218838;
+}
+.etage-img {
+  max-width: 100%; /* Limite la largeur de l'image à 100% de la largeur du conteneur */
+  max-height: 80vh; /* Limite la hauteur de l'image à 80% de la hauteur de la vue */
+}
+.bureau-img {
+  max-width: 100%; /* Limite la largeur de l'image à 100% de la largeur du conteneur */
+  max-height: 70vh; /* Limite la hauteur de l'image à 70% de la hauteur de la vue */
+}
+/* Ajouter un en-tête pour l'entreprise */
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Personnaliser le style des boutons */
+#retour-btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+#retour-btn:hover {
+  background-color: #c82333;
+}
+
+/* Ajouter des transitions */
+.batiment-btn,
+.etage-btn,
+.bureau-btn {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* Considérer l'accessibilité */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+/* Pour les boutons de bureau */
+/* Pour les boutons de bureau */
+/* Pour les boutons de bureau */
+.bureau-btn {
+  padding: 60px 40px; /* Réduisez légèrement la taille du rembourrage pour diminuer la hauteur des boutons */
+  font-size: 14px; /* Réduisez légèrement la taille de la police pour une apparence plus petite */
+}
+
+/* Pour les images de bureaux */
+.bureau-img {
+  max-width: 100%; /* Limite la largeur de l'image à 100% de la largeur du conteneur */
+  max-height: 45vh; /* Limite la hauteur de l'image à 60% de la hauteur de la vue */
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  position: relative; /* Assure que l'en-tête est positionné relativement par rapport à son conteneur */
+  z-index: 2; /* Garantit que l'en-tête est au-dessus des autres éléments */
+}
+
+#map {
+  padding: 20px;
+  position: relative; /* Assure que le conteneur de la carte est positionné relativement */
+  z-index: 1; /* Garantit que le contenu de la carte est en-dessous de l'en-tête */
+}

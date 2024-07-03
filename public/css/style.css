@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('_e9ca7257-cf5b-4d2c-bcd6-cbcbc7aa0d32.jpeg'); 
+     background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0; /* Adjusted padding for smaller screens */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.logo {
+    color: rgb(19, 201, 176);
+    font-size: 2rem; /* Reduced font size for smaller screens */
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    margin-right: 10px; /* Adjusted margin for smaller screens */
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 10px; /* Adjusted margin for smaller screens */
+}
+
+.navbar ul li {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar li {
+    color: white;
+    background-color: rgb(19, 201, 176);
+    font-size: 0.8rem; /* Reduced font size for smaller screens */
+    font-weight: 400;
+    display: inline-block;
+    padding: 10px 15px; /* Adjusted padding for smaller screens */
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 20px; /* Adjusted margin for smaller screens */
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+
+.navbar li:hover {
+    background-color: rgb(70, 77, 74);
+    transform: scale(1.1);
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 40px; /* Reduced font size for smaller screens */
+    margin-top: 40px; /* Adjusted margin for smaller screens */
+}
+
+button {
+    width: 150px; /* Reduced width for smaller screens */
+    padding: 10px 0; /* Adjusted padding for smaller screens */
+    margin: 15px 5px; /* Adjusted margin for smaller screens */
+    border-radius: 20px; /* Adjusted border radius for smaller screens */
+    font-size: 0.9rem; /* Reduced font size for smaller screens */
+    color: white;
+    background-color: rgb(19, 201, 176);
+    cursor: pointer;   
+    transition: 0.6s ease; 
+}
+button:hover{
+    background-color: rgb(70, 77, 74);
+    transform: scale(1.1);
+}
